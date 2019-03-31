@@ -232,7 +232,7 @@ public class AuctionDao {
 	        try {
 	        	System.out.println("======================================3");
 	            InputStream input;
-	            fos = new FileOutputStream("E:\\Hackathon's\\3rdyr_project\\Auction\\WebContent\\images\\"+id+"Prdct.jpg");
+	            fos = new FileOutputStream("F:\\gitLab\\OnlineAuctionSystem\\Auction\\WebContent\\images\\"+id+"Prdct.jpg");
 	            {
 	               
 	                input = blob.getBinaryStream();
