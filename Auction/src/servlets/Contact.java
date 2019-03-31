@@ -70,7 +70,7 @@ public class Contact extends HttpServlet {
 	          }catch(Exception e){System.out.println(e);}    
 	          System.out.println("Success...");
 	          
-	          String to="khushibhat96@gmail.com";//change accordingly
+	          String to="ishaanveerdadhwal@gmail.com";//change accordingly
 			  final String user="hazohazri@gmail.com";//change accordingly
 			  final String password="Hazri839";//change accordingly
 			  final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
@@ -100,11 +100,11 @@ public class Contact extends HttpServlet {
 			    MimeMessage message = new MimeMessage(session);
 			    message.setFrom(new InternetAddress(user,"bid CLAP"));
 			    message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));
-			    message.setSubject(mess);
+			    message.setSubject(subject);
 			    
 			    //3) create MimeBodyPart object and set your message content    
 			    BodyPart messageBodyPart1 = new MimeBodyPart();
-			    messageBodyPart1.setText(subject);
+			    messageBodyPart1.setText(mess);
 			    
 			    //4) create new MimeBodyPart object and set DataHandler object to this object    
 			    MimeBodyPart messageBodyPart2 = new MimeBodyPart();
